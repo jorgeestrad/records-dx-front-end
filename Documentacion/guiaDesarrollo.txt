@@ -1,0 +1,6 @@
+Front End
+-----------------------------------------------------------------------------------------------------------------------
+1. Instalar complemnte open-in-browser.
+
+2. Creamos el proyecto con l plantilla para react
+    $npx create-react-app .
