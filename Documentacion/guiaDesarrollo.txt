@@ -5,30 +5,7 @@ Front End    https://handsonreact.com/docs/labs/ts/CreatingNewProject
 2. Creamos el proyecto con l plantilla para react
    a) $npx create-react-app .
 
-    b) $npx create-react-app keeptrack --template typescript --use-npm        
-        De una vez con typescript (omitir pasos del 3 al 8)
+    b) $npx create-react-app records-dx-fe --template typescript --use-npm        
     
-3. Typescript. Verificar si se tiene instalado TypeScript
-     $npm i typescript -g
-  
-
-4. Instalar el trnspilador de código TypeScript
-    $npm i ts-node -g
-
-                           o     
-5. $npm install typescript ts-node @types/node --save-dotenv
-
-
-6. Instalar nodemon de manera global
-    $npm i nodemon -g
-
-7. Crear el Proyecto de TypeScript
-   $tsc --init         Esta instrucción crea el archivo:tsconfig.json
-
- 8. Configurar TypeScript
-   a) En el archivo tsconfig.json buscar la opción target . y asignar : "target": "es2015",
-   b) Se quiere que los archivos generados por el compilador de TypeScript se guarden en otra carpeta, entonces, en el archivo
-     tsconfig.json:  "outDir": "./src/build",
-
-   c) Se guardan los cambios en el archivo tsconfig.json y luego, desde una terminal: $tsc + Enter
+   
 
