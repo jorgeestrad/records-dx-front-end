@@ -5,7 +5,19 @@ Front End    https://handsonreact.com/docs/labs/ts/CreatingNewProject
 2. Creamos el proyecto con l plantilla para react
    a) $npx create-react-app .
 
-    b) $npx create-react-app records-dx-fe --template typescript --use-npm        
-    
+    b) $npx create-react-app records-dx-fe --template typescript --use-npm   
+
+
+3. Creación del menú Principal
+https://www.youtube.com/watch?v=BqRkb_m_PuE
+
+4. Boostrap
+
+npm install react-bootstrap bootstrap
+
+4. Para generar el codigo de un esqueleto de una página web:  !+tab
+
+
+   
    
 
