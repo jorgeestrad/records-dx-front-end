@@ -2,15 +2,15 @@ import React from 'react';
 import MenuHorizontal from '../components/MenuHorizontal';
 import HeaderPage from '../components/HeaderPage';
 
-export interface IAboutPageProps {}
+export interface IVideoPageProps {}
 
-const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
+const VideoPage: React.FunctionComponent<IVideoPageProps> = (props) => {
     return (
         <div>
             <MenuHorizontal />
-            <p>About Page</p>
+            <p>Video Page</p>
         </div>
     )
 }
 
-export default AboutPage;
+export default VideoPage;

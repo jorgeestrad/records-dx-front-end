@@ -2,15 +2,15 @@ import React from 'react';
 import MenuHorizontal from '../components/MenuHorizontal';
 import HeaderPage from '../components/HeaderPage';
 
-export interface IAboutPageProps {}
+export interface IBlogPageProps {}
 
-const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
+const BlogPage: React.FunctionComponent<IBlogPageProps> = (props) => {
     return (
         <div>
             <MenuHorizontal />
-            <p>About Page</p>
+            <p>Blog Page</p>
         </div>
     )
 }
 
-export default AboutPage;
+export default BlogPage;

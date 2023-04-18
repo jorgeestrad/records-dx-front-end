@@ -2,15 +2,15 @@ import React from 'react';
 import MenuHorizontal from '../components/MenuHorizontal';
 import HeaderPage from '../components/HeaderPage';
 
-export interface IAboutPageProps {}
+export interface ISuppliesPageProps {}
 
-const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
+const SuppliesPage: React.FunctionComponent<ISuppliesPageProps> = (props) => {
     return (
         <div>
             <MenuHorizontal />
-            <p>About Page</p>
+            <p>Supplies Page</p>
         </div>
     )
 }
 
-export default AboutPage;
+export default SuppliesPage;

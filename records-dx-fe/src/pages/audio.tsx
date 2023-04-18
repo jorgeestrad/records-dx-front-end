@@ -2,15 +2,15 @@ import React from 'react';
 import MenuHorizontal from '../components/MenuHorizontal';
 import HeaderPage from '../components/HeaderPage';
 
-export interface IAboutPageProps {}
+export interface IAudioPageProps {}
 
-const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
+const AudioPage: React.FunctionComponent<IAudioPageProps> = (props) => {
     return (
         <div>
             <MenuHorizontal />
-            <p>About Page</p>
+            <p>Audio Page</p>
         </div>
     )
 }
 
-export default AboutPage;
+export default AudioPage;
