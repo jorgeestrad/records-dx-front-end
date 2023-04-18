@@ -18,6 +18,15 @@ npm install react-bootstrap bootstrap
 4. Para generar el codigo de un esqueleto de una página web:  !+tab
 
 
+Rutas
+----------------------------------------------------------------------------------------
+Reat Router  https://youtube.com/watch?v=7xRVnmWcTE8 
+
+https://www.youtube.com/watch?v=2aumoR0-jmQ
+a) $npm install --save react-router-dom@6
+
+
+
    
    
 
