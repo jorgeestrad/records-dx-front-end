@@ -28,6 +28,10 @@ function MenuHorizontal() {
                   <NavDropdown.Item href="/supplies">Suministros</NavDropdown.Item>
                   <NavDropdown.Item href="/exchanges">Intercambios</NavDropdown.Item>
                 </NavDropdown>
+                <NavDropdown.Divider />
+                <Nav.Link href="/login">LogIn</Nav.Link>
+                <Nav.Link href="/register">Regístrese</Nav.Link>
+                <NavDropdown.Divider />
                 <Nav.Link href="/about">Acerca de..</Nav.Link>
               </Nav>
             </Navbar.Collapse>

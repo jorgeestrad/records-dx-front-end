@@ -1,18 +1,19 @@
 import React from 'react';
 import MenuHorizontal from '../components/MenuHorizontal';
 import HeaderPage from '../components/HeaderPage';
-import banner from '../img/ban_video.png';
+import banner from '../img/ban_login.png';
 
-export interface IVideoPageProps {}
 
-const VideoPage: React.FunctionComponent<IVideoPageProps> = (props) => {
+export interface ILogInPageProps {}
+
+const LogInPage: React.FunctionComponent<ILogInPageProps> = (props) => {
     return (
         <div>
             <MenuHorizontal />
             <HeaderPage banner={banner}/>
-            <p>Video Page</p>
+            <p>Log In</p>
         </div>
     )
 }
 
-export default VideoPage;
+export default LogInPage;

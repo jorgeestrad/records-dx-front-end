@@ -26,6 +26,13 @@ https://www.youtube.com/watch?v=2aumoR0-jmQ
 a) $npm install --save react-router-dom@6
 
 
+4. Instalar mdb
+Material Design
+for Bootstrap 5 & React 18
+
+ $npm i mdb-react-ui-kit
+
+
 
    
    

@@ -13,6 +13,8 @@ import ExchangePage from './pages/exchanges';
 import OthersPage from './pages/others';
 import SuppliesPage from './pages/supplies';
 import VideoPage from './pages/video';
+import LogInPage from './pages/LogIn';
+import RegisterPage from './pages/Register';
 
 export interface IApplicationProps {}
 
@@ -33,6 +35,8 @@ const Application: React.FunctionComponent<IApplicationProps> = (props) => {
              <Route path='others' element={<OthersPage/>}/>
              <Route path='mygoals' element={<MyGoalsPage/>}/>
              <Route path='supplies' element={<SuppliesPage/>}/>
+             <Route path='login' element={<LogInPage/>}/>
+             <Route path='register' element={<RegisterPage/>}/>
           </Routes>
         </BrowserRouter>
     );

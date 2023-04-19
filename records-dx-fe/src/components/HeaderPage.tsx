@@ -1,15 +1,23 @@
 import React from 'react';
-import banner from '../img/banner.png';
+import { Col, Row } from 'react-bootstrap';
 
-function HeaderPage() {
-    return <div>
-        <div className='header_superior'>
+export interface IBannerProps {banner: string;}
+
+
+const  HeaderPage:  React.FunctionComponent<IBannerProps> = (props) => {
+  return <div>
+    <Row>
+      <Col>
+      </Col>
+      <Col>
           <div className='banner'>
-            <img src={banner} alt="Records-dx.com"></img>
-           </div>
-        </div>
-      
-    </div>
-  }
-  
-  export default HeaderPage;
+            <img src={props.banner} alt="Records-dx.com"></img>
+          </div>
+      </Col>
+      <Col>
+      </Col>
+    </Row>
+  </div>
+}
+
+export default HeaderPage;
