@@ -27,7 +27,6 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
             <br/>
             <br/>
             <br/>
-            <br/>
             <Footer />
         </div>
     )

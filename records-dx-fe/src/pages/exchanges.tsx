@@ -2,6 +2,7 @@ import React from 'react';
 import MenuHorizontal from '../components/MenuHorizontal';
 import HeaderPage from '../components/HeaderPage';
 import banner from '../img/ban_exchanges.png';
+import Footer from '../components/Footer';
 
 export interface IExchangePageProps {}
 
@@ -10,7 +11,26 @@ const ExchangePage: React.FunctionComponent<IExchangePageProps> = (props) => {
         <div>
             <MenuHorizontal />
             <HeaderPage banner={banner}/>
-            <p>Exchange Page</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Footer />
         </div>
     )
 }

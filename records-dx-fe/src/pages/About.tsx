@@ -2,6 +2,7 @@ import React from 'react';
 import MenuHorizontal from '../components/MenuHorizontal';
 import HeaderPage from '../components/HeaderPage';
 import banner from '../img/ban_about.png';
+import Footer from '../components/Footer';
 
 
 export interface IAboutPageProps {}
@@ -11,7 +12,26 @@ const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
         <div>
             <MenuHorizontal />
             <HeaderPage banner={banner}/>
-            <p>About Page</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Footer />
         </div>
     )
 }
