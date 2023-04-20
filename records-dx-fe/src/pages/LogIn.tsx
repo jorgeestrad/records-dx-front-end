@@ -4,7 +4,6 @@ import HeaderPage from '../components/HeaderPage';
 import banner from '../img/ban_login.png';
 import Footer from '../components/Footer';
 
-
 export interface ILogInPageProps {}
 
 const LogInPage: React.FunctionComponent<ILogInPageProps> = (props) => {
@@ -12,7 +11,6 @@ const LogInPage: React.FunctionComponent<ILogInPageProps> = (props) => {
         <div>
             <MenuHorizontal />
             <HeaderPage banner={banner}/>
-            <br/>
             <br/>
             <br/>
             <br/>
