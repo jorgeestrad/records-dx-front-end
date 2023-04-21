@@ -29,6 +29,8 @@ export class SignUp extends React.Component<SignUpProps, SignUpState>{
    
     constructor(props: SignUpProps) {
       super(props);
+
+
       const initialState = {
          username : '',
          email : '',
@@ -64,6 +66,7 @@ export class SignUp extends React.Component<SignUpProps, SignUpState>{
         default:
           break;
       }
+      
       this.setState(Object.assign(this.state, { errors,[name]: value }));
       console.log(this.state.errors);
     }

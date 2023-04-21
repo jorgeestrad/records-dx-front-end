@@ -5,8 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function MenuHorizontal() {
-    return (
+      return (
         <Navbar bg="dark" variant="dark" expand="lg">
           <Container>
             <Navbar.Brand href="/">Home</Navbar.Brand>
