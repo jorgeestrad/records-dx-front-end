@@ -32,7 +32,6 @@ const Footer = (): JSX.Element => <footer color="stylish-color-dark" className="
                   </CDBBtn>
                 </CDBBox>
               </CDBBox>
-             
               <CDBBox>
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0',width: '500px' }}>
                   <div className="col-md-4 mb-md-4 mb-4">
