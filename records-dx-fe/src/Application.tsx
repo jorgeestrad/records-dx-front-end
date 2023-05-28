@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import HomePage from './pages/Home';
+import ProfilePage from './pages/Profile';
 import AboutPage from './pages/About';
 import LayoutComponent from './components/Layout';
 import DirectoryPage from './pages/directory';
@@ -23,6 +24,7 @@ const Application: React.FunctionComponent<IApplicationProps> = (props) => {
         <BrowserRouter>
           <Routes>
              <Route path='/' element={<HomePage/>}/>
+             <Route path='profile' element={<ProfilePage/>}/>
              <Route path='audio' element={<AudioPage/>}/>
              <Route path='video' element={<VideoPage/>}/>
              <Route path='about' element={<AboutPage/>}/>

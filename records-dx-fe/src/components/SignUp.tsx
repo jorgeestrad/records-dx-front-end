@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import '../public/styleLogIn.css'
+import '../public/styles/styleLogIn.css'
 import axios from "axios";
 
 interface SignUpProps {

@@ -1,10 +1,12 @@
 import React,{ useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import '../public/styleLogIn.css'
+import '../public/styles/styleLogIn.css'
 import { Subscriber } from "../models/subscriber";
 import { Col } from 'react-bootstrap';
 import { OrganizeImportsMode } from 'typescript';
+import { useNavigate } from 'react-router-dom';
+import {URL_SERVICES} from '../config_env/env';
 
 
  const Register = () => {
@@ -34,6 +36,10 @@ import { OrganizeImportsMode } from 'typescript';
          }
         
       };
+
+      const navigate = useNavigate();
+      const closeClick = () => navigate('/');
+
    
      const postSubscriber = () => {
       var jsonData = {
@@ -66,7 +72,7 @@ import { OrganizeImportsMode } from 'typescript';
             body: JSON.stringify(jsonData)
         };
 
-         fetch("http://localhost:3005/auth/register/",requestOptions)
+         fetch(URL_SERVICES,requestOptions)
          .then((response) =>{
             if (response.status !== 200) {
               throw new Error(response.statusText);
@@ -130,9 +136,19 @@ import { OrganizeImportsMode } from 'typescript';
                         required />
                   </div>
                   <div>API Status: {statusMessage}</div>
-                  <Button variant="primary" type='button' onClick={handleSubmit}> 
-                      Enviar
-                  </Button>
+                  <div className='row'>
+                     <div className='col-md-5'>
+                        <Button variant="primary" type='button' onClick={handleSubmit}> 
+                            Enviar
+                        </Button>
+                     </div>
+                      <div className='col-md-5'>
+                        <Button variant="success" type='button' onClick={closeClick}> 
+                            Cerrar
+                        </Button>
+                     </div>
+                  </div>
+                
               </Form.Group>
               </Form>
             </div>

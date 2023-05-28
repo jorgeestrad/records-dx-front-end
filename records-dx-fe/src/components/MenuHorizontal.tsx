@@ -14,6 +14,7 @@ function MenuHorizontal() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
+                <Nav.Link href="/profile">Mi Perfil</Nav.Link>
                 <Nav.Link href="/directory">Directorio</Nav.Link>
                 <Nav.Link href="/mygoals">Mis metas</Nav.Link>
                 <Nav.Link href="/news">Noticias</Nav.Link>

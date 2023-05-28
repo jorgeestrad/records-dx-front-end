@@ -6,3 +6,20 @@
     background-color:#000204;
   }
 
+  .pHome {
+    color: rgb(3, 3, 61);
+    text-indent: 12px;
+    text-transform:none;
+    font-family:'Helvetica Now', 'Courier New', Courier, monospace;
+    font-size:14px;
+  }
+
+  .hTitle {
+    color: rgb(116, 3, 3);
+    text-indent: 0px;
+    font-family:'Helvetica Now','Courier New', Courier, monospace;
+    font-size:20px
+  }
+
+  
+ 

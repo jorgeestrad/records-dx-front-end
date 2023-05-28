@@ -17,7 +17,7 @@ const Footer = (): JSX.Element => <footer color="stylish-color-dark" className="
                   <img alt="logo" src={logo} width="200px" />
                   <span className="ms-3 h5 font-weight-bold">Records-dx.com</span>
                 </a>
-                <p className="my-3" style={{ width: '250px' }}>
+                <p className="my-3" style={{ width: '250px', color:"white" }}>
                   El lugar de encuentro de los radioaficionados
                 </p>
                 <CDBBox display="flex" className="mt-2" style={{ width: '100px' }}>
@@ -36,8 +36,8 @@ const Footer = (): JSX.Element => <footer color="stylish-color-dark" className="
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0',width: '500px' }}>
                   <div className="col-md-4 mb-md-4 mb-4">
                     <ul className="list-unstyled">
-                      <li><a href="#!">Link 1</a></li>
-                      <li><a href="#!">Link 2</a></li>
+                      <li><a href="#!">Contactos</a></li>
+                      <li><a href="#!">Políticas de privacidad</a></li>
                      </ul>
                   </div>
                 </CDBBox>
