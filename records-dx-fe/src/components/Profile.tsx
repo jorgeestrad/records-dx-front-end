@@ -7,6 +7,7 @@ import { Col } from 'react-bootstrap';
 import { OrganizeImportsMode } from 'typescript';
 import { useNavigate } from 'react-router-dom';
 import {URL_SERVICES} from '../config_env/env';
+import imguser from '../img/user.png';
 
 
  const Profile = () => {
@@ -39,7 +40,6 @@ import {URL_SERVICES} from '../config_env/env';
 
       const navigate = useNavigate();
       const closeClick = () => navigate('/');
-
    
      const postSubscriber = () => {
       var jsonData = {
@@ -90,27 +90,29 @@ import {URL_SERVICES} from '../config_env/env';
    
     return(
       <div >
-         
-               <h2>Mi Perfil</h2>
-               <hr />
-                <div className='row'>
+            <div className='row'>
+                <div className='col-md-1'>
+                </div>
+                <div className='col-md-10'>
+                     <h2>Mi Perfil</h2>
+                </div>
+            </div>
+            <hr />
+            <div className='row'>
                 <div className='col-md-1'>
                 </div>
                 <div className='col-md-10'>
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Form.Group as={Col} md="5" controlId="validationCustom01">
-                        <div id='countryd'>
+                        <Form.Group as={Col} md="4" controlId="validationCustom01">
+                            <div id='countryd'>
                                 <label htmlFor="country">País</label>
-                                <Form.Control 
-                                    type='select'
-                                    id='country' name='country'
-                                    size="sm"
-                                    placeholder="Seleccione el país"
-                                    onChange={(e) => setUserName(e.target.value)}
-                                    required />
-                                <Form.Control.Feedback type="invalid">
-                                        Please choose a username.
-                                </Form.Control.Feedback>
+                                  <Form.Select aria-label="Default select example">
+                                    <option>Seleccione el país</option>
+                                    <option value="1">Colombia</option>
+                                    <option value="2">Brasil</option>
+                                    <option value="3">Ecuador</option>
+                                    <option value="3">Venezuela</option>
+                                </Form.Select>
                             </div>
                             <div id='firstNamed'>
                                 <label htmlFor="firstname">Nombres</label>
@@ -118,28 +120,63 @@ import {URL_SERVICES} from '../config_env/env';
                                     type='text'
                                     id='firstname' name='firstname'
                                     size="sm"
-                                    placeholder="Ingrese sus nombres"
                                     onChange={(e) => setUserName(e.target.value)}
                                     required />
                                 <Form.Control.Feedback type="invalid">
-                                        Please choose a username.
+                                       Ingrese sus nombres.
                                 </Form.Control.Feedback>
                             </div>
-                           
+                            <div id='qlsd'>
+                                <label htmlFor="qsl">QSL</label>
+                                <Form.Control 
+                                    type='text'
+                                    id='qld' name='qsl'
+                                    size="sm"
+                                    onChange={(e) => setUserName(e.target.value)}
+                                    required />
+                            </div>
+                             <div id='coded'>
+                                <label htmlFor="code">Nombres</label>
+                                <Form.Control 
+                                    type='text'
+                                    id='code' name='code'
+                                    size="sm"
+                                    onChange={(e) => setUserName(e.target.value)}
+                                    required />
+                                <Form.Control.Feedback type="invalid">
+                                       Ingrese su código!.
+                                </Form.Control.Feedback>
+                            </div>
+                            <div id='addressd'>
+                                <label htmlFor="addres">Dirección</label>
+                                <Form.Control 
+                                    type='text'
+                                    id='address' name='qsl'
+                                    size="sm"
+                                    onChange={(e) => setUserName(e.target.value)}
+                                    required />
+                            </div>
+                             <div id='ispublicd'>
+                                <label htmlFor="ispublic">Información pública</label>
+                                <Form.Check
+                                    type='checkbox'
+                                    id='ispublic'
+                                />
+                            </div>
                         </Form.Group>
-                      
-                        <Form.Group as={Col} md="5" controlId="validationCustom01">
+                        <Form.Group as={Col} md="1" controlId="validationCustom01">
+                        </Form.Group>
+                        <Form.Group as={Col} md="4" controlId="validationCustom01">
                             <div id='userNamed'>
                                 <label htmlFor="username">Nombre del usuario</label>
                                 <Form.Control 
                                     type='text'
                                     id='username' name='username'
                                     size="sm"
-                                    placeholder="Ingrese su alias/nombre de usuario"
                                     onChange={(e) => setUserName(e.target.value)}
                                     required />
                                 <Form.Control.Feedback type="invalid">
-                                        Please choose a username.
+                                        Ingrese su alias/nombre de usuario.
                                 </Form.Control.Feedback>
                             </div>
                             <div id='lasttNamed'>
@@ -148,11 +185,10 @@ import {URL_SERVICES} from '../config_env/env';
                                     type='text'
                                     id='lastname' name='lastname'
                                     size="sm"
-                                    placeholder="Ingrese sus apellidos"
                                     onChange={(e) => setUserName(e.target.value)}
                                     required />
                                 <Form.Control.Feedback type="invalid">
-                                        Please choose a username.
+                                        Ingrese sus apellidos.
                                 </Form.Control.Feedback>
                         </div>
                             <div id='emaild'>
@@ -160,31 +196,48 @@ import {URL_SERVICES} from '../config_env/env';
                                 <Form.Control type='email'
                                     id='email' name='email'
                                     size="sm"
-                                    placeholder="Ingrese su correo electrónico"
                                     onChange={(e) => setEmail(e.target.value)}
                                     required />
                             </div>
-                           
-                            
+                           <div id='phoned'>
+                                <label htmlFor="phone">Teléfono</label>
+                                <Form.Control 
+                                    type='text'
+                                    id='phone' name='phone'
+                                    size="sm"
+                                    onChange={(e) => setUserName(e.target.value)}
+                                    required />
+                            </div>
+                        </Form.Group>
+                        <Form.Group as={Col} md="1" controlId="validationCustom01">
+                        </Form.Group>
+                        <Form.Group as={Col} md="2" controlId="validationCustom01">
+                        <div className="col-sm-6">
+                            <br></br>
+                            <img className='img-fluid' src= {imguser} alt='Foto'/>
+                        </div>
                         </Form.Group>
                     </Form>
-                    </div>
-                    <div className='col-md-1'>
-                    </div>
-                    <div className='row'>
-                    <div className='row'>
-                                <div className='col-md-5'>
-                                    <Button variant="primary" type='button' onClick={handleSubmit}> 
-                                        Enviar
-                                    </Button>
-                                </div>
-                               
-                            </div>
-                    </div>
-
                 </div>
-                      
-         </div>
+                <div className='col-md-1'>
+                </div>
+                  
+            </div>
+            <div className='row'>
+                 <div className='col-md-1'>
+                </div>
+                <div className='col-md-2'>
+                    <Button variant="primary" type='button' onClick={handleSubmit}> 
+                         Guardar
+                    </Button>
+                </div>
+                  <div className='col-md-2'>
+                    <Button variant= "success" type='button' onClick={handleSubmit}> 
+                         Diseñar Perfil
+                    </Button>
+                </div>
+            </div>
+      </div>
     );
 }
 

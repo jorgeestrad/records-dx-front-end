@@ -1,0 +1,20 @@
+Front End    https://handsonreact.com/docs/labs/ts/CreatingNewProject
+-----------------------------------------------------------------------------------------------------------------------
+1. Instalar complemnte open-in-browser.
+
+2. Creamos el proyecto con l plantilla para react
+   a) $npx create-react-app .
+
+    b) $npx create-react-app records-dx-fe --template typescript --use-npm        
+    
+   
+
+3. Para ejecutar el proyecto:
+  npm start
+
+4. Para detener la ejecución del proyecto:
+    Ctrl + C
+
+
+5. Usando Estilos css
+npm install mini.css@3.0.1
