@@ -7,17 +7,13 @@ export interface IBannerProps {banner: string;}
 
 const  HeaderPage:  React.FunctionComponent<IBannerProps> = (props) => {
   return <div>
-    <Row >
-      <Col>
-      </Col>
-      <Col sm={12}>
+    <div className='row' >
+      <div className="col-md-12">
           <div className={styles.divBanner}>
             <img src={props.banner} alt="Records-dx.com" ></img>
           </div>
-      </Col>
-      <Col>
-      </Col>
-    </Row>
+      </div>
+    </div>
   </div>
 }
 

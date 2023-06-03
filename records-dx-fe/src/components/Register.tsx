@@ -89,23 +89,23 @@ import {URL_SERVICES} from '../config_env/env';
     };
    
     return(
-      <div className='wrapper'>
-            <div className='form-wrapper'>
-               <h2>Registro de usuario</h2>
+      <div>
+         <div className='row'> 
+         <div className="col-md-4 offset-md-4">
+            <h2>Registro de usuario</h2>
                <div><hr /></div>
                <Form noValidate validated={validated} onSubmit={handleSubmit}>
-               <Form.Group as={Col} md="12" controlId="validationCustom01">
+               <Form.Group as={Col} controlId="validationCustom01">
                   <div className='username'>
                      <label htmlFor="username">Nombre del usuario</label>
                      <Form.Control 
                         type='text'
                         id='username' name='username'
                         size="sm"
-                        placeholder="Ingrese su alias/nombre de usuario"
                         onChange={(e) => setUserName(e.target.value)}
                         required />
                      <Form.Control.Feedback type="invalid">
-                            Please choose a username.
+                     Ingrese su alias/nombre de usuario.
                      </Form.Control.Feedback>
                   </div>
                   <div className='email'>
@@ -113,27 +113,33 @@ import {URL_SERVICES} from '../config_env/env';
                      <Form.Control type='email'
                         id='email' name='email'
                         size="sm"
-                        placeholder="Ingrese su correo electrónico"
                         onChange={(e) => setEmail(e.target.value)}
                         required />
+                         <Form.Control.Feedback type="invalid">
+                           Ingrese su correo electrónico.
+                         </Form.Control.Feedback>
                   </div>
                   <div className='password'>
                      <label htmlFor="password">Contraseña</label>
                      <Form.Control type='password'
                         id='password' name='password'
                         size="sm"
-                        placeholder="Ingrese su contraseña"
-                        onChange={(e) => setPassword(e.target.value)}
+                         onChange={(e) => setPassword(e.target.value)}
                         required />
+                         <Form.Control.Feedback type="invalid">
+                           Ingrese su contraseña.
+                         </Form.Control.Feedback>
                   </div>
                   <div className='password'>
                      <label htmlFor="password">Confirme su Contraseña</label>
                      <Form.Control type='password'
                         id='passwordConfirm' name='passwordConfirm'
                         size="sm"
-                        placeholder="Confirme su contraseña"
-                        onChange={(e) => setPasswordConfirm(e.target.value)}
+                         onChange={(e) => setPasswordConfirm(e.target.value)}
                         required />
+                         <Form.Control.Feedback type="invalid">
+                           confirme su contraseña.
+                         </Form.Control.Feedback>
                   </div>
                   <div>API Status: {statusMessage}</div>
                   <div className='row'>
@@ -153,6 +159,7 @@ import {URL_SERVICES} from '../config_env/env';
               </Form>
             </div>
          </div>
+      </div>
     );
 }
 
