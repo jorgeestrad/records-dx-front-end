@@ -33,6 +33,16 @@ for Bootstrap 5 & React 18
  $npm i mdb-react-ui-kit
 
 
+ 
+ React Data Table Component
+ ------------------------------------------------------------------------------------------
+
+a) Instalar componente
+npm install react-data-table-component
+npm install react-data-table-component styled-components
+
+https://react-data-table-component.netlify.app/?path=/docs/getting-started-installation--page
+
 
    
    
