@@ -4,40 +4,92 @@ import { useNavigate } from 'react-router-dom';
 import {URL_SERVICES_SUBSCRIBER} from '../config_env/env';
 import DataTable, { TableColumn, createTheme } from 'react-data-table-component';
 import {customTableStyles} from '../public/styleTables'
-import { useFetch } from '../fetch/useFetch';
+import { useFetch,getToken } from '../fetch/useFetch';
 import {Subscriber} from '../models/subscriber'
+import {URL_SERVICES_AUTHORIZE} from '../config_env/env';
 
 
 interface DataRow {
     id : number;
     firstname: string;
     lastname: string;
-    addres: string;
+    countryId: number;
 }
 
 
 const Directory = () => {
    const navigate = useNavigate();
-   const {data, loading, error,handleCancelRequest} = useFetch(URL_SERVICES_SUBSCRIBER + 'GetListSubscribers');
+   const [data, setData] = useState(null);
+   const [error, setError] = useState(new Error());
+
+//    const {token, loadingt, errort} = getToken('jorgestradacorrea@gmail.com','misojos1037');
+//    alert(token);
+
+
+
+
+// var jsonData = {
+//     "email"     : 'jorgestradacorrea@gmail.com',
+//     "password"  : 'misojos1037',
+//  }
+//  const abortController = new AbortController();
+//  const requestOptions = {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify(jsonData)
+//  };
+
+//  fetch(URL_SERVICES_AUTHORIZE,requestOptions)
+//  .then((response) =>{
+//     if (response.status !== 200) {
+//       throw new Error(response.statusText);
+//     }
+//     console.log('Token:' + response.json());
+//     alert ('Ok');
+//   })
+//   .then((data) => alert(data))
+//   .catch((error) => {
+//     alert(error);
+//   })
+//  .finally();
+
+
+
+
+//    const {data, loading, error} = useFetch(URL_SERVICES_SUBSCRIBER + 'GetListSubscribersSinToken');
+
+
+
+
+fetch(URL_SERVICES_SUBSCRIBER + 'GetListSubscribersSinToken')
+.then((response) => response.json())
+.then((data) => setData(data))
+.catch((error) => {setError(error)})
+.finally(() => {})
+
+
+    
    const datar = JSON.stringify(data);
-    function handleButtonClick(): void {
+   const arr = JSON.parse(datar);
+   
+   function handleButtonClick(): void {
        alert('Hola viejo mundo!');
     }
 
-    const dataf = [
-        {
-            id: 1,
-            firstname: 'Beetlejuice',
-            lastname: '1988',
-            addres: "yuyuyu"
-        },
-        {
-            id: 2,
-            firstname: 'Beetlejuice de ',
-            lastname: '1988',
-            addres: "eferr ere"
-        },
-    ]
+    // const dataf = [
+    //     {
+    //         id: 1,
+    //         firstname: 'Beetlejuice',
+    //         lastname: '1988',
+    //         addres: "yuyuyu"
+    //     },
+    //     {
+    //         id: 2,
+    //         firstname: 'Beetlejuice de ',
+    //         lastname: '1988',
+    //         addres: "eferr ere"
+    //     },
+    // ]
 
        
     const columns : TableColumn<DataRow>[] =  [
@@ -55,8 +107,8 @@ const Directory = () => {
             selector: row => row.lastname,
         },
         {
-            name: 'addres',
-            selector: row => row.addres,
+            name: 'countryId',
+            selector: row => row.countryId,
         },
         {
 		    cell: () => <button onClick={handleButtonClick}>Action</button>,
@@ -69,18 +121,18 @@ const Directory = () => {
   return(
     <div >
         <br></br>
-        <div>
+        {/* <div>
             <ul>
                 {error && <li>Error: {error.message}</li>}
-                {loading && <li>Cargando ...</li>}
+                {loading && <li>Cargando ...</li>} 
             </ul>
-        </div>
+        </div> */}
         <div className='row'>
             <div className='col-md-10 offset-md-1'>
                 <DataTable
                     title="Directorio de Subscriptores"
                     columns={columns}
-                    data= {dataf}
+                    data= {arr}
                     selectableRows
                     pagination 
                     customStyles={customTableStyles}
